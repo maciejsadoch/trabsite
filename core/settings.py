@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.template.backends import django
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -122,3 +124,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'static'
 ]
+
+# Email settings
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'djangotestemail2020@gmail.com'
+EMAIL_HOST_PASSWORD = 'djangotest'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
